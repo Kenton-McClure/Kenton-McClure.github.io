@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(2, 45, 2);
+    font-family: Verdana;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: rgba(131, 63, 24, 0.877);
+    font: Baskervill;
+}
+nav{
+    text-align: center;
+    color: rgba(131, 63, 24, 0.877);
+}
+h2{
+    text-align: center;
+    color: rgba(131, 63, 24, 0.877);
+}
+p{
+    color: rgba(131, 63, 24, 0.877)
+}
+a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+img{
+    width: 50%
+}
+figcaption{
+    font-style: italic;
+    color: blanchedalmond
+}
+ul{
+    text-align: left;
+    color:blanchedalmond
+}
+
