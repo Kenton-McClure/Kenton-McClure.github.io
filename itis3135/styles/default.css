@@ -10,7 +10,7 @@ h1{
 }
 nav{
     text-align: center;
-    color: rgba(131, 63, 24, 0.877);
+    color: rgba(131, 63, 24, 0.876);
 }
 h2{
     text-align: center;
@@ -24,7 +24,7 @@ a{
     text-decoration: none;
 }
 img{
-    width: 50%
+    width: 20%
 }
 figcaption{
     font-style: italic;
