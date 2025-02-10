@@ -1,0 +1,71 @@
+html {
+    background-color: rgb(131, 177, 230);
+    text-align: center;
+}
+
+header h1 {
+    background-color: pink; /* Set the background color to pink */
+    padding: 20px; /* Add padding to create the rectangle effect */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    display: inline-block; /* Ensure the background only covers the content */
+}
+
+.images-container {
+    display: flex; 
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add space between the figures */
+}
+
+figure {
+    text-align: center; 
+    margin: 0;
+}
+
+img[class='figure1'] {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+}
+
+img[class='figure2'] {
+    width: 50%;
+    height: auto;
+    margin-right: 0;
+}
+
+img[class='figure3'] {
+    width: 65%;
+    margin-right: 0;
+    height: auto;
+}
+
+p[class='description'] {
+    font-size: 20px;
+}
+
+figcaption {
+    text-align: center;
+    text-decoration: underline;
+}
+
+img[class='image-1'], img[class='image-3'], img[class='image-4'], img[class='image-5'] {
+    width: 200px;
+    height: auto;
+}
+img[class='image-2']{
+    width:170px;
+}
+
+.full_selection {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+.about_us{
+    font-size: 20px;
+}
