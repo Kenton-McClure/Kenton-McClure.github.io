@@ -3,20 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Evaluations</title>
+    <title>ITIS3135||Website Evaluations</title>
     <link rel="stylesheet" href="/itis3135/styles/web_eval.css">
 </head>
 <body>
     <header>
-        <h1>Website Evaluations</h1>
-        <nav>
-            <a href="/index.html">Home</a>
-            ||
-            <a href="/itis3135/introduction.html">Introductions</a>
-            ||
-            <a href="/itis3135/contract.html">Contract</a>
-
-        </nav>
+        <div data-include="/itis3135/components/header.html"></div>
     </header>
 
     <main>
@@ -60,7 +52,12 @@
     </main>
 
     <footer>
-        <p>&copy;  KentEnto©2025. All rights reserved.</p>
+        <div data-include="/itis3135/components/footer.html"></div>
     </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="/itis3135/scripts/html.include.min.js"></script>
 </body>
 </html>
