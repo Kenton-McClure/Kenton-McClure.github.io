@@ -1,0 +1,23 @@
+html{
+    background-color: antiquewhite;
+}
+body {
+    text-align: center;
+}
+
+header, footer, ul {
+    text-align: left;
+}
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
+a{
+    color: rgb(105, 168, 189);
+    text-decoration: none;
+}
+img{
+    width: 40%;
+}
