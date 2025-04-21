@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro</title>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <h2>BYO Intro</h2>
+
+    
+    <main>
+        <h3>
+            Time to BYO Intro page, please fill out the form below so we can create your own page.
+        </h3>
+        <form id="introForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Your Name" required><br><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" name="mascot" value="Your Mascot" required><br><br>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept=".png, .jpg" required><br><br>
+
+            <label for="imageCaption">Image Caption:</label>
+            <input type="text" id="imageCaption" name="imageCaption" value="Your Image Caption" required><br><br>
+
+            <label for="personalBackground">Personal Background:</label>
+            <input type="text" id="personalBackground" name="personalBackground" value="Your Personal Background" required><br><br>
+
+            <label for="professionalBackground">Professional Background:</label>
+            <input type="text" id="professionalBackground" name="professionalBackground" value="Your Professional Background" required><br><br>
+
+            <label for="academicBackground">Academic Background:</label>
+            <input type="text" id="academicBackground" name="academicBackground" value="Your Academic Background" required><br><br>
+
+            <label for="webDevBackground">Background in Web Development:</label>
+            <input type="text" id="webDevBackground" name="webDevBackground" value="Your Web Development Background" required><br><br>
+
+            <label for="primaryPlatform">Primary Computer Platform:</label>
+            <input type="text" id="primaryPlatform" name="primaryPlatform" value="Your Primary Computer Platform" required><br><br>
+
+            <label>Courses currently taking:</label>
+            <div id="coursesContainer">
+                <button type="button" onclick="addCourse()">Add Course</button>
+            </div><br>
+
+            <label for="funnyThing">Funny thing?</label>
+            <input type="text" id="funnyThing" name="funnyThing" value="Your Funny Thing"><br><br>
+
+            <label for="anythingElse">Anything else?</label>
+            <input type="text" id="anythingElse" name="anythingElse" value="Your Anything Else"><br><br>
+
+            <label>
+                <input type="checkbox" id="agree" name="agree" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label><br><br>
+
+            <button type="submit">Submit</button>
+            <input type="reset" value="Reset">
+        </form>
+
+        <script>
+            function addCourse() {
+                const container = document.getElementById('coursesContainer');
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.name = 'courses[]';
+                input.placeholder = 'Enter a course';
+                container.appendChild(input);
+
+                const deleteButton = document.createElement('button');
+                deleteButton.type = 'button';
+                deleteButton.textContent = 'Delete';
+                deleteButton.onclick = function () {
+                    container.removeChild(input);
+                    container.removeChild(deleteButton);
+                };
+                container.appendChild(deleteButton);
+                container.appendChild(document.createElement('br'));
+            }
+        </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #444;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="file"], input[type="checkbox"], button, input[type="reset"] {
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="reset"] {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+
+        #coursesContainer input {
+            width: calc(100% - 80px);
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        #coursesContainer button {
+            width: auto;
+            display: inline-block;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+        }
+    </style>
+       
+
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.js"></script>
+</body>
+</html>
