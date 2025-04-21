@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hootie Tech Enterprises-About</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <div id="header-include"></div>
+        <script>
+            $(function() {
+                $("#header-include").load("components/header.html");
+            });
+        </script>
+    </header>
+   
+
+    <main>
+        <section class="about-us" style="text-align: center;">
+            <h2>About Us</h2>
+            <p>Welcome to Hootie Tech Enterprises! We are dedicated to providing exceptional services and products to our customers. Our team is passionate, innovative, and committed to excellence.</p>
+            
+            <h2>Our Mission</h2>
+            <p>Our mission is to deliver high-quality solutions that meet the needs of our clients while fostering a culture of integrity, collaboration, and continuous improvement.</p>
+            
+            <h2>Our Vision</h2>
+            <p>We aim to be a leader in our industry, setting standards for innovation, customer satisfaction, and sustainability.</p>
+            
+            <h2>Our Team</h2>
+            <p>Our team consists of experienced professionals who bring diverse skills and perspectives to the table. Together, we work to achieve our goals and exceed expectations.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-include"></div>
+        <script>
+            $(function() {
+                $("#footer-include").load("components/footer.html");
+            });
+        </script>
+</body>
+</html>
